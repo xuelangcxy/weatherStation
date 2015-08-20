@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <meta name="renderer" content="webkit">
+  <meta name="description" content="weatherStation">
+  <meta name="author" content="chenxueyong">
+  <link rel="icon" href="images/favicon.jpg">
+
+  <title><%= title%></title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheets/home.css" rel="stylesheet"></head>
+
+<body>
+  <div class="aqi_live_data">
+    <div class="navbar navbar-inverse">
+      <div class="navbar-inner">
+        <!-- <a class="brand" href="/">
+        <img src="images/ws.png"></a>
+      -->
+      <div class="row">
+        <div class="col-lg-2">
+          <a class="brand" href="/">
+            <span>空气小站</span>
+          </a>
+        </div>
+
+        <div class="col-lg-10">
+          <div class="collapse navbar-collapse navbar-top-collapse">
+            <ul class="nav nav-tab">
+              <li>
+                <a href="/">首页</a>
+              </li>
+              <li>
+                <a href="/introduction">介绍</a>
+              </li>
+              <li>
+                <a href="/rank">排行榜</a>
+              </li>
+              <li>
+                <a href="/sharer">创享者</a>
+              </li>
+              <li>
+                <a href="/about">关于</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  更多 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" id="dropdown-menu"  aria-labelledby="dropdownMenuDivider">
+                  <li class="menu">
+                    <a href="#">功能展望</a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li class="menu">
+                    <a href="#">应用场景</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- row --> </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-10">
+      <div class="city_name">
+      <h2> <strong>北京</strong>
+        </h2>
+      </div>
+      <div class="level">
+        <h4> <strong>二级（良）</strong>
+        </h4>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="live_data_time">数据更新时间：2015-08-19 08:00:00</div>
+        </div>
+        <div class="col-lg-6" align="right">
+          <div class="live_data_unit">数值单位：μg/m3(CO为mg/m3)</div>
+        </div>
+      </div>
+
+      <div class="span1">
+        <div class="data">61</div>
+        <div class="caption">AQI</div>
+      </div>
+
+      <div class="span1">
+        <div class="data">43</div>
+        <div class="caption">pm2.5</div>
+      </div>
+
+      <div class="span1">
+        <div class="data">61</div>
+        <div class="caption">pm10</div>
+      </div>
+
+      <div class="span1">
+        <div class="data">0.7</div>
+        <div class="caption">CO</div>
+      </div>
+
+      <div class="span1">
+        <div class="data">29</div>
+        <div class="caption">NO2</div>
+      </div>
+
+      <div class="span1">
+        <div class="data">2</div>
+        <div class="caption">SO2</div>
+      </div>
+
+      <div class="span1">
+        <div class="data">66</div>
+        <div class="caption">O3</div>
+      </div>
+
+      <div class="primary_pollution">
+        <span>首要污染物： 颗粒物(PM2.5)</span>
+      </div>
+      <div class="harm">
+        <span>对健康影响情况： 空气质量可接受,但某些污染物可能对极少数异常敏感人群健康有较弱影响</span>
+      </div>
+      <div class="method">
+        <span>建议采取的措施： 极少数异常敏感人群应减少户外活动</span>
+      </div>
+
+    </div>
+    <!-- col-sm-offset-1 col-sm-10 --> </div>
+
+</div>
+<!-- aqi_live_data -->
+
+<div class="monitor_station">
+  <div class="col-sm-offset-1 col-sm-10">
+    <table class="table table-bordered table-hover">
+      <caption>
+        <strong><h3>12个监测点</h3></strong> 
+      </caption>
+      <tbody>
+        <thead class="thead">
+          <td colspan="2">
+            <p>监测点</p>
+          </td>
+          <td colspan="2">
+            <p>AQI</p>
+          </td>
+          <td colspan="2">
+            <p>空气质量</p>
+            <p>指数类别</p>
+          </td>
+          <td colspan="2">
+            <p>首要污染物</p>
+          </td>
+          <td colspan="2">
+            <p>PM2.5</p>
+            <p>细颗粒物</p>
+          </td>
+          <td colspan="2">
+            <p>PM10</p>
+            <p>可吸入颗粒物</p>
+          </td>
+          <td colspan="2">
+            <p>CO</p>
+            <p>一氧化碳</p>
+          </td>
+          <td colspan="2">
+            <p>NO2</p>
+            <p>二氧化氮</p>
+          </td>
+          <td colspan="2">
+            <p>O3</p>
+            <p>臭氧1小时平均</p>
+          </td>
+          <td colspan="2">
+            <p>SO2</p>
+            <p>二氧化硫</p>
+          </td>
+        </thead>
+        <tr class="warning">
+          <td colspan="2">万寿西宫</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr class="active">
+          <td colspan="2">定陵</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr class="success">
+          <td colspan="2">东四</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr>
+          <td colspan="2">万寿西宫</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr class="warning">
+          <td colspan="2">天坛</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr class="active">
+          <td colspan="2">农展馆</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr class="success">
+          <td colspan="2">官园</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr>
+          <td colspan="2">海淀区万柳</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr class="warning">
+          <td colspan="2">顺义新城</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr class="active">
+          <td colspan="2">怀柔镇</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr class="success">
+          <td colspan="2">昌平镇</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr>
+          <td colspan="2">奥体中心</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr class="warning">
+          <td colspan="2">古城</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr class="active">
+          <td colspan="2">万寿西宫</td>
+          <td colspan="2">54</td>
+          <td colspan="2">良</td>
+          <td colspan="2">颗粒物(PM10)</td>
+          <td colspan="2">29</td>
+          <td colspan="2">57</td>
+          <td colspan="2">1.0</td>
+          <td colspan="2">55</td>
+          <td colspan="2">16</td>
+          <td colspan="2">2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="historyChart" id="historyChart" style="height:400px;"></div>
+  </div>
+</div>
+<!-- monitor_station -->
+
+<!-- <div class="progress">
+<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+  <span class="sr-only">45% Complete</span>
+</div>
+</div>
+-->
+<footer>
+<h3>Copyright © 2015 (ISWIT)xuelangcxy.All Rights Reserved</h3>
+</footer>
+
+<script type="text/javascript" src="javascripts/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+<script src="javascripts/echarts.js"></script>
+<script type="text/javascript" src="javascripts/historyChart.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  //鼠标经过自动展开下拉菜单
+  $('ul.dropdown-menu').hide();
+  $('li.dropdown').hover(
+    function(){
+      $('ul.dropdown-menu').show()
+    },
+    function(){
+      $('ul.dropdown-menu').hide();
+    })
+
+  $('li.menu').hover(
+    function(){
+      $(this).css({'color':'white','background-color':'black'})
+    },
+    function(){
+      $(this).css({'color':'black','background-color':'white'})
+    })
+
+  //鼠标经过改编数值透明度
+  $('div.span1').hover(
+    function(){
+      $(this).css({'opacity':'1'})
+    },
+    function(){
+      $(this).css({'opacity':'0.7'})
+    })
+})
+</script>
+
+</body>
+</html>

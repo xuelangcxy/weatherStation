@@ -1,0 +1,155 @@
+body,
+h1,
+div {
+        margin: 0%;
+        padding: 0%;
+        /*font-family: Microsoft YaHei;*/
+    }
+    body {
+        margin: 0%;
+        padding: 0%;
+        position: relative;
+    }
+    header {
+        margin: 0%;
+        padding: 0%;
+    }
+    footer {
+        background-color: #ebebeb;
+        height: 40%;
+        text-align: center;
+        padding: 1%;
+    }
+    footer h3 {
+        font-size: 1.2em;
+        margin: 0%;
+    }
+    .aqi_live_data {
+        background: url(../images/background.jpg);
+        background-position: top;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 450px;
+        padding-top: 3%;
+    }
+	.navbar {
+		background-color: rgb(38,38,38);
+		/*display: block;*/
+        height: 10%;
+        margin: 0% 8% 0% 8%;
+        padding: 0%;
+	}
+    /*.brand img {
+        height: 80%;
+        margin: 0.3% 1% 1% 1%;
+    }*/
+    .brand span {
+        font-size: 2.5em;
+        color: #fff;
+        font-family: STXinwei;
+        margin-top: 2%;
+        margin-left: 2%;
+        opacity: 0.7;
+    }
+    .brand span:hover {
+        opacity: 1;
+        /*font-size: 3em;*/
+        text-decoration: none;
+        /*position: relative;*/
+    }
+    .nav li {
+        display: inline-block;
+        font-size: 1.4em;
+    }
+    .city_name {
+        display: inline-block;
+    }
+    .city_name h2 {
+        font-size: 2.5em;
+        /*color: rgb(255,255,255);*/
+        color: #000;
+        font-weight: 500;
+    }
+    .level {
+        display: inline-block;
+        margin-left: 2%;
+    }
+    .level h4 {
+        font-size: 1.5em;
+        color: #fff;
+        /*font-weight: 300;*/
+    }
+    .live_data_time {
+        font-size: 1.2em;
+        color: rgb(200,200,200);
+        display: inline-block;
+        font-weight: 100;
+    }
+    .live_data_unit {
+        font-size: 1.2em;
+        color: rgb(200,200,200);
+        display: inline-block;
+        text-align: right;
+        font-weight: 100;
+    }
+    .span1 {
+        background: url(../images/circle.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 10%;
+        height: 112px;
+        display: inline-block;
+        margin-right: 4.2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        opacity: 0.7;
+    }
+    .span1:nth-child(10) {
+        margin-right: 0;
+    }
+    .data {
+        font-size: 3em; 
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+        padding-top: 10%;
+    }
+    .caption {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .dropdown-menu li {
+        width: 100%;
+    }
+    .divider {
+        color: #000;
+    }
+    div span {
+        color: rgb(200,200,200);
+        font-size: 1.2em;
+    }
+    .primary_pollution {
+        margin-bottom: 1%;
+    }
+    .harm {
+        margin-bottom: 1%;
+    }
+    .method {
+        margin-bottom: 2%
+    }
+    .monitor_station {
+        height: 1150px;
+    }
+    td p {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .historyChart {
+        margin-top: 4%;
+        padding: 2%;
+        -webkit-border-radius: 20px;
+    }
+    .thead {
+        background-color: orange;
+    }
