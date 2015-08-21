@@ -1,0 +1,129 @@
+body,
+h1,
+div {
+        margin: 0%;
+        padding: 0%;
+        /*font-family: Microsoft YaHei;*/
+    }
+    body {
+        margin: 0%;
+        padding: 0%;
+        /*position: relative;*/
+    }
+    header {
+        margin: 0%;
+        padding: 0%;
+    }
+    footer {
+        background-color: #ebebeb;
+        height: 40%;
+        text-align: center;
+        padding: 1%;
+    }
+    footer h3 {
+        font-size: 1.2em;
+        margin: 0%;
+    }
+    .aqi_live_data {
+        background: url(../images/background.jpg);
+        background-position: top;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 260px;
+        padding-top: 3%;
+    }
+	.navbar {
+		background-color: rgb(38,38,38);
+		/*display: block;*/
+        height: 8%;
+        margin: 0% 8% 0% 8%;
+        padding: 0%;
+	}
+    /*.brand img {
+        height: 80%;
+        margin: 0.3% 1% 1% 1%;
+    }*/
+    .brand span {
+        font-size: 2.5em;
+        color: #fff;
+        font-family: STXinwei;
+        margin-top: 2%;
+        margin-left: 2%;
+        opacity: 0.7;
+    }
+    .brand span:hover {
+        opacity: 1;
+        /*font-size: 3em;*/
+        text-decoration: none;
+        /*position: relative;*/
+    }
+    .nav li {
+        display: inline-block;
+        font-size: 1.4em;
+    }
+    .data {
+        font-size: 3em; 
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+        padding-top: 10%;
+    }
+    .caption {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .dropdown-menu li {
+        width: 100%;
+    }
+    .divider {
+        color: #000;
+    }
+    .slogan {
+        font-size: 3em;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+        margin-top: 4%;
+    }
+    .container {
+        padding: 0%;
+        text-align: center;
+    }
+    .picture {
+        background: url(../images/introduction.jpg);
+        width: 600px;
+        height: 399px;
+        margin-top: 1%;
+        display: inline-block;
+        /*display: none;*/
+    }
+    .introduction {
+        min-height: 20px;
+        background-color: rgb(245,245,245);
+        border: 1px solid #e3e3e3;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+        -webkit-border-radius: 8px;
+        padding: 1% 3% 1% 3%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        text-align: left;
+    }
+    .title {
+        text-align: center;
+        font-size: 3em;
+        font-weight: 600;
+    }
+    .introduction span {
+        font-size: 1.7em;
+        font-weight: 600;
+        color: rgb(43,167,3);
+    }
+    .warning {
+        display: inline-block;
+        font-size: 1.5em;
+    }
+    .details {
+        text-indent: 35px;
+        font-size: 1.5em;
+        margin-top: 1%;
+    }

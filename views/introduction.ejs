@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <meta name="renderer" content="webkit">
+  <meta name="description" content="weatherStation">
+  <meta name="author" content="chenxueyong">
+  <link rel="icon" href="images/favicon.jpg">
+
+  <title><%= title%></title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheets/introduction.css" rel="stylesheet"></head>
+
+<body>
+  <div class="aqi_live_data">
+    <div class="navbar navbar-inverse">
+      <div class="navbar-inner">
+        <!-- <a class="brand" href="/">
+        <img src="images/ws.png"></a>
+      -->
+      <div class="row">
+        <div class="col-lg-2">
+          <a class="brand" href="/">
+            <span>空气小站</span>
+          </a>
+        </div>
+
+        <div class="col-lg-10">
+          <div class="collapse navbar-collapse navbar-top-collapse">
+            <ul class="nav nav-tab">
+              <li>
+                <a href="/">首页</a>
+              </li>
+              <li>
+                <a href="/introduction">介绍</a>
+              </li>
+              <li>
+                <a href="/rank">排行榜</a>
+              </li>
+              <li>
+                <a href="/sharer">创享者</a>
+              </li>
+              <li>
+                <a href="/about">关于</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  更多 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" id="dropdown-menu"  aria-labelledby="dropdownMenuDivider">
+                  <li class="menu">
+                    <a href="#">功能展望</a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li class="menu">
+                    <a href="#">应用场景</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- row --> 
+      </div>
+  </div>
+
+  <div class="slogan">空气小站，致力让生活更美好！</div>
+
+</div>
+<!-- aqi_live_data -->
+
+  <div class="container">
+    <div class="picture"></div>
+    <div class="introduction">
+      <p class="title">Introduction</p>
+      <span>声明:</span>
+      <article class="warning">本站UI界面主要借鉴了优秀作品<a href="http://www.pm25.in">pm25.in</a>网站，设计风格雷同。本站设计纯属个人娱乐，无任何商业用途！</article>
+        <div class="details">
+        <p>空气小站提供全国各地天气以及空气质量状况的查询。</p>
+        <p>本站数据来源于pm25.in网站提供的天气api接口，pm25.in是为大家提供空气质量监测数据的网站，数据采自于国家环境保护部。同时，为了让更多人更快更好的知道PM2.5，pm25.in无偿开放了PM2.5数据接口，以方便更多的开发者使用。</p>
+        <p>很荣幸能够成为其中的一名受益者，也希望能够得到您宝贵的意见和建议，帮助我做得更好！<a href="">提建议>></a></p>
+        </div>
+      
+    </div>
+  </div>
+
+
+<footer>
+<h3>Copyright © 2015 (ISWIT)<a href="http://weibo.com/u/2495479297?wvr=3.6&lf=reg">xuelangcxy</a>.All Rights Reserved</h3>
+  
+</footer>
+
+<script type="text/javascript" src="javascripts/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="javascripts/home.js"></script>
+
+</body>
+</html>

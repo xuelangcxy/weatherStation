@@ -69,6 +69,8 @@ div {
         /*color: rgb(255,255,255);*/
         color: #000;
         font-weight: 500;
+        display: inline-block;
+        margin-bottom: 0%;
     }
     .level {
         display: inline-block;
@@ -84,6 +86,8 @@ div {
         color: rgb(200,200,200);
         display: inline-block;
         font-weight: 100;
+        position: absolute;
+        margin-top: 2%;
     }
     .live_data_unit {
         font-size: 1.2em;
@@ -91,6 +95,7 @@ div {
         display: inline-block;
         text-align: right;
         font-weight: 100;
+        margin-top: 2%;
     }
     .span1 {
         background: url(../images/circle.png);
@@ -133,9 +138,10 @@ div {
     }
     .harm {
         margin-bottom: 1%;
+        position: relative;
     }
     .method {
-        margin-bottom: 2%
+        margin-bottom: 0%;
     }
     .monitor_station {
         height: 1150px;
@@ -152,4 +158,59 @@ div {
     }
     .thead {
         background-color: orange;
+    }
+    .shift_city {
+        display: inline-block;
+        -webkit-border-radius: 5px;
+        font-size: 0.1em;
+    }
+    .cities {
+        width: 300px;
+        height: 200px;
+        background-color: #fff;
+        -webkit-border-radius: 8px;
+        padding: 1%;
+        position: absolute;
+        z-index: 1;
+        overflow: auto;
+        display: none;
+    }
+    .top {
+        color: rgb(175,165,45);
+        font-size: 1.3em;
+    }
+    .bottom {
+        color: blue;
+        font-size: 1em;
+    }
+    .unstyled {
+        margin: 0%;
+        padding: 0%;
+        padding-left: 5%;
+    }
+    .unstyled li {
+        display: inline-block;
+        margin-right: 5%;
+    }
+    .back_top {
+        position: fixed;
+        /*background-image: url(../images/back_top.png);*/
+        margin-top: 6%;
+        margin-left: 2%;
+        text-align: center;
+    }
+    .back_top_img {
+        background-image: url(../images/back_top.png);
+        width: 50px;
+        height: 50px;
+    }
+    caption {
+        margin-bottom: 0%;
+    }
+    caption h3 {
+        font-size: 2em;
+        margin-bottom: 0%;
+    }
+    td p {
+        margin: 0%;
     }
