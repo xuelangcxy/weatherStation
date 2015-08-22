@@ -85,12 +85,13 @@ div {
         text-align: center;
         margin-top: 4%;
     }
-    .container {
+    .container1 {
         padding: 0%;
         text-align: center;
+        height: 770px;
     }
     .picture {
-        background: url(../images/introduction.jpg);
+        background: url(../images/winter.jpg);
         width: 600px;
         height: 399px;
         margin-top: 1%;
@@ -126,4 +127,52 @@ div {
         text-indent: 35px;
         font-size: 1.5em;
         margin-top: 1%;
+    }
+
+
+    .container,
+    .container img {
+        margin-top: 1%;
+        width:600px;
+        height:399px;
+        border:0;
+        vertical-align:top;
+    }
+    .container li {
+        list-style:none;
+        margin:0;
+        padding:0;
+        display: inline-block;
+    }
+    .num ul,
+    .num {
+        position:absolute;
+        right:5px;
+        bottom:5px;
+        font:12px/1.5 tahoma, arial;
+        height:18px;
+    }
+    .num li{
+        float: left;
+        color: #d94b01;
+        text-align: center;
+        line-height: 16px;
+        width: 16px;
+        height: 16px;
+        font-family: Arial;
+        font-size: 11px;
+        cursor: pointer;
+        margin-left: 3px;
+        border: 1px solid #f47500;
+        background-color: #fcf2cf;
+    }
+    .num li.on{
+        line-height: 18px;
+        width: 18px;
+        height: 18px;
+        font-size: 14px;
+        margin-top:-2px;
+        background-color: #ff9415;
+        font-weight: bold;
+        color:#FFF;
     }

@@ -10,7 +10,6 @@
   <meta name="description" content="weatherStation">
   <meta name="author" content="chenxueyong">
   <link rel="icon" href="images/favicon.png">
-  <script src="javascripts/SlideTrans.js"></script>
 
   <title><%= title%></title>
 
@@ -19,9 +18,6 @@
   <link href="stylesheets/introduction.css" rel="stylesheet"></head>
 
 <body>
-  <script>
-    new SlideTrans("idContainer", "idSlider", 3, { Vertical: false }).Run();
-  </script>
   <div class="aqi_live_data">
     <div class="navbar navbar-inverse">
       <div class="navbar-inner">
@@ -80,29 +76,8 @@
 </div>
 <!-- aqi_live_data -->
 
-  <div class="container1">
-    <!-- <div class="picture"></div> -->
-    <div class="container" id="idContainer">
-      <ul id="idSlider">
-        <li>
-          <img src="images/spring.jpg" title="春" />    
-        </li>
-        <li>
-          <img src="images/summer.jpg" title="夏" />    
-        </li>
-        <li>
-          <img src="images/autumn.jpg" title="秋" />    
-        </li>
-        <li>    
-        <img src="images/winter.jpg" title="冬" />    
-      </li>
-     
-    </ul>
-    <ul class="num" id="idNum"></ul>
-    </div>
-
-
-    <div class="col-lg-offset-1 col-lg-10">
+  <div class="container">
+    <div class="picture"></div>
     <div class="introduction">
       <p class="title">Introduction</p>
       <span>声明:</span>
@@ -113,9 +88,8 @@
         <p>很荣幸能够成为其中的一名受益者，也希望能够得到您宝贵的意见和建议，帮助我做得更好！<a href="">提建议>></a></p>
         </div>
       
-    </div><!-- introduction -->
     </div>
-  </div><!-- container1 -->
+  </div>
 
 
 <footer>
@@ -126,28 +100,6 @@
 <script type="text/javascript" src="javascripts/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="javascripts/home.js"></script>
-
-<script>
-
-var nums = [], timer, n = $$("idSlider").getElementsByTagName("li").length,
-  st = new SlideTrans("idContainer", "idSlider", n, {
-    onStart: function(){
-      forEach(nums, function(o, i){ o.className = st.Index == i ? "on" : ""; })
-    }
-  });
-for(var i = 1; i <= n; AddNum(i++)){};
-function AddNum(i){
-  var num = $$("idNum").appendChild(document.createElement("li"));
-  num.innerHTML = i--;
-  num.onmouseover = function(){
-    timer = setTimeout(function(){ num.className = "on"; st.Auto = false; st.Run(i); }, 200);
-  }
-  num.onmouseout = function(){ clearTimeout(timer); num.className = ""; st.Auto = true; st.Run(); }
-  nums[i] = num;
-}
-st.Run();
-
-</script>
 
 </body>
 </html>
