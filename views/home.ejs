@@ -25,13 +25,13 @@
         <img src="images/ws.png"></a>
       -->
       <div class="row">
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-xs-2">
           <a class="brand" href="/">
             <span>空气小站</span>
           </a>
         </div>
 
-        <div class="col-lg-10">
+        <div class="col-lg-10 col-xs-10">
           <div class="collapse navbar-collapse navbar-top-collapse">
             <ul class="nav nav-tab">
               <li>
@@ -72,9 +72,9 @@
   </div>
 
   <div class="row">
-    <div class="col-sm-offset-1 col-sm-10">
+    <div class="col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
       <div class="city_name">
-        <h2> <strong>北京</strong>
+      <h2> <strong><span id="area">北京</span></strong>
         </h2>
         <!-- <input class="shift_city" type="button" value="切换城市"> <b class="caret"></b>
       </input>
@@ -1403,56 +1403,56 @@
         </div><!-- cities -->
     </div><!-- city_name -->
     <div class="level">
-      <h4> <strong>二级（良）</strong>
+    <h4> <strong><span id="level">一</span>级（<span id="quality">优</span>）</strong>
       </h4>
     </div>
 
     <div class="row">
-      <div class="col-lg-6">
-        <div class="live_data_time">数据更新时间：2015-08-19 08:00:00</div>
+      <div class="col-lg-6 col-xs-6">
+        <div class="live_data_time">数据更新时间：<span id="time">2015-08-23 20:00:00</span></div>
       </div>
-      <div class="col-lg-6" align="right">
+      <div class="col-lg-6 col-xs-6" align="right">
         <div class="live_data_unit">数值单位：μg/m3(CO为mg/m3)</div>
       </div>
     </div>
 
     <div class="span1">
-      <div class="data">61</div>
+      <div class="data"><span id="AQI">45</span></div>
       <div class="caption">AQI</div>
     </div>
 
     <div class="span1">
-      <div class="data">43</div>
+      <div class="data"><span id="pm2_5">15</span></div>
       <div class="caption">pm2.5</div>
     </div>
 
     <div class="span1">
-      <div class="data">61</div>
+      <div class="data"><span id="pm10">25</span></div>
       <div class="caption">pm10</div>
     </div>
 
     <div class="span1">
-      <div class="data">0.7</div>
+      <div class="data"><span id="CO">0.64</span></div>
       <div class="caption">CO</div>
     </div>
 
     <div class="span1">
-      <div class="data">29</div>
+      <div class="data"><span id="NO2">33</span></div>
       <div class="caption">NO2</div>
     </div>
 
     <div class="span1">
-      <div class="data">2</div>
+      <div class="data"><span id="SO2">2</span></div>
       <div class="caption">SO2</div>
     </div>
 
     <div class="span1">
-      <div class="data">66</div>
+      <div class="data"><span id="O3">47</span></div>
       <div class="caption">O3</div>
     </div>
 
     <div class="primary_pollution">
-      <span>首要污染物： 颗粒物(PM2.5)</span>
+    <span>首要污染物： <span id="primary_pollutant">颗粒物(PM2.5)</span></span>
     </div>
     <div class="harm">
       <span>对健康影响情况： 空气质量可接受,但某些污染物可能对极少数异常敏感人群健康有较弱影响</span>
@@ -1469,8 +1469,8 @@
 <!-- aqi_live_data -->
 
 <div class="monitor_station">
-<div class="col-sm-offset-1 col-sm-10">
-  <table class="table table-bordered table-hover">
+<div class="col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
+  <!-- <table class="table table-bordered table-hover">
     <caption>
       <strong><h3>本市共有12个监测点:</h3></strong> 
     </caption>
@@ -1683,11 +1683,78 @@
         <td colspan="2">2</td>
       </tr>
     </tbody>
+  </table> -->
+
+  <div class="weather">
+  <div class="col-lg-4 col-xs-4">
+  <div class="realtime">实时天气情况</div>
+    <img src="" id="realtime_weather_pic">
+    </div>
+    <div class="col-lg-8 col-xs-8">
+      <div class="realtime_temp"><span id="realtime_temp">25</span>℃</div>
+      <div class="realtime_weather"><span id="realtime_weather">多云</span></div>
+      <div class="realtime_humidity">湿度：<span id="realtime_humidity">64%</span></div>
+      <div class="wind">风向:<span id="wind">东风</span></div>
+      <div class="wind_level">风力：<span id="wind_level">3级</span></div>
+      <div class="time">更新时间：<span id="update_time">15:40</span></div>
+    </div>
+  </div>
+
+  <div class="index">
+  <table class="table table-bordered">
+  <caption>生活指数</caption>
+    <tr>
+      <td>
+      <div class="col-lg-9 col-xs-9">
+        <p>防晒指数</p>
+        <p><span id="fs_level">中等</span></p>
+        <p><span id="fs_advise">属中等强度紫外辐射天气，外出时应注意防护，建议涂擦SPF指数高于15，PA+的防晒护肤品。</span></p>
+        </div>
+        <div class="col-lg-3 col-xs-3"><img src="images/fangshai.png"></div>
+      </td>
+      <td>
+      <div class="col-lg-9 col-xs-9">
+        <p>穿衣指数</p>
+        <p><span id="cy_level">热</span></p>
+        <p><span id="cy_advise">天气热，建议着短裙、短裤、短薄外套、T恤等夏季服装。</span></p>
+        </div>
+        <div class="col-lg-3 col-xs-3"><img src="images/chuanyi.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <div class="col-lg-9 col-xs-9">
+        <p>运动指数</p>
+        <p><span id="yd_level">较适宜</span></p>
+        <p><span id="yd_advise">天气较好，户外运动请注意防晒。推荐您进行室内运动。</span></p>
+        </div>
+        <div class="col-lg-3 col-xs-3"><img src="images/yundong.png"></div>
+      </td>
+      <td>
+      <div class="col-lg-9 col-xs-9">
+        <p>洗车指数</p>
+        <p><span id="xc_level">较适宜</span></p>
+        <p><span id="xc_advise">较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。</span></p>
+        </div>
+        <div class="col-lg-3 col-xs-3"><img src="images/xiche.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <div class="col-lg-9 col-xs-9">
+        <p>晾晒指数</p>
+        <p><span id="ls_level">适宜</span></p>
+        <p><span id="ls_advise">天气不错，适宜晾晒。赶紧把久未见阳光的衣物搬出来吸收一下太阳的味道吧！</span></p>
+        </div>
+        <div class="col-lg-3 col-xs-3"><img src="images/liangshai.png"></div>
+      </td>
+    </tr>
   </table>
+  </div>
 
   <div class="historyChart" id="historyChart" style="height:400px;"></div>
 </div>
-<div class="col-sm-offset-11">
+<div class="col-sm-offset-11 col-xs-offset-11">
   <div id="back-top" class="back_top">
   <a href="#top"><div class="back_top_img"></div></a>
     </div>
@@ -1711,6 +1778,8 @@
 <script type="text/javascript" src="javascripts/home.js"></script>
 <script src="javascripts/echarts.js"></script>
 <script type="text/javascript" src="javascripts/historyChart.js"></script>
+<!-- <script type="text/javascript" src="javascripts/weather.js"></script> -->
+<script type="text/javascript" src="javascripts/insertData.js"></script>
 
 </body>
 </html>

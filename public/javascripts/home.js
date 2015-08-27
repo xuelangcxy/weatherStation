@@ -36,6 +36,15 @@ $(document).ready(function() {
       })
     })
 
+  //当页面位于顶部时，隐藏back_top图标
+  $(window).scroll(function(){
+    /*console.log($(window).scrollTop());*/
+    if ($(window).scrollTop()==0) {
+      $('div.back_top_img').css({'display': 'none'})
+    } else {
+      $('div.back_top_img').css({'display': 'block'})
+    }
+  })
   //鼠标经过回到顶部小图标时改变图片样式
   $('div.back_top_img').hover(
     function() {

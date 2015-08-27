@@ -9,6 +9,8 @@ div {
         margin: 0%;
         padding: 0%;
         position: relative;
+        min-width:1350px;
+        /*_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>1000?"1000px":"");*/
     }
     header {
         margin: 0%;
@@ -30,6 +32,7 @@ div {
         background-size: 100%;
         background-repeat: no-repeat;
         height: 450px;
+        min-height: 450px;
         padding-top: 3%;
     }
 	.navbar {
@@ -129,7 +132,13 @@ div {
     .divider {
         color: #000;
     }
-    div span {
+    /*div span {
+        color: rgb(200,200,200);
+        font-size: 1.2em;
+    }*/
+    .primary_pollution span,
+    .harm span,
+    .method span {
         color: rgb(200,200,200);
         font-size: 1.2em;
     }
@@ -144,7 +153,9 @@ div {
         margin-bottom: 0%;
     }
     .monitor_station {
-        height: 1150px;
+        height: 100%;
+        /*min-height: 1120px;*/
+        min-height: 1300px;
     }
     td p {
         text-align: center;
@@ -155,6 +166,8 @@ div {
         margin-top: 4%;
         padding: 2%;
         -webkit-border-radius: 20px;
+        border: 1px solid #e3e3e3;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
     }
     .thead {
         background-color: orange;
@@ -203,6 +216,7 @@ div {
         background-image: url(../images/back_top.png);
         width: 50px;
         height: 50px;
+        display: none;
     }
     caption {
         margin-bottom: 0%;
@@ -213,4 +227,84 @@ div {
     }
     td p {
         margin: 0%;
+    }
+    table {
+        height: 100%;
+    }
+
+
+    .index {
+        margin-top: 2%;
+        padding: 1% 2% 1% 2%;
+        background-color: #ebebeb;
+        -webkit-border-radius: 15px;
+        border: 1px solid #e3e3e3;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    }
+    caption {
+        font-size: 2em;
+        font-weight: 600;
+    }
+    td {
+        width: 525px;
+        background-color: #fff;
+    }
+    td p:nth-child(1) {
+        color: rgb(40,93,181);
+        font-size: 1.2em;
+    }
+    td p:nth-child(2) {
+        color: rgb(134,93,181);
+        font-size: 1.5em;
+    }
+    td p:nth-child(3) {
+        color: rgb(0,0,0);
+        font-size: 1.2em;
+        text-align: left;
+        text-indent: 35px;
+    }
+    td img {
+        height: 80px;
+        margin-top: 15px;
+    }
+    .weather {
+        height: 300px;
+        /*width: 300px;*/
+        background-color: #ebebeb;
+        margin-top: 20px;
+        -webkit-border-radius: 15px;
+        border: 1px solid #e3e3e3;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+        padding: 2% 1% 2% 1%;
+    }
+    .weather div:nth-child(2) {
+        text-align: right;
+    }
+    .realtime_temp {
+        font-size: 4.5em;
+    }
+    .realtime_weather {
+        font-size: 2.5em;
+    }
+    .realtime_humidity,
+    .wind,
+    .wind_level,
+    .time {
+        font-size: 1.5em;
+    }
+    .weather img {
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 200px;
+        height: 200px;
+    }
+    .realtime {
+        font-size: 2em;
+        text-align: left;
+    }
+
+
+    #primary_pollutant {
+        color: rgb(200,200,200);
+        font-size: 1.1em;
     }

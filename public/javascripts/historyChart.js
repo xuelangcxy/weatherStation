@@ -139,7 +139,7 @@ require(
         clearInterval(timeTicket);
         var timeTicket = setInterval(function() {
             for (var i = 0; i < 24; i++) {
-                option.series[0].data[i] = (Math.random() * 500).toFixed(0) - 0;
+                option.series[0].data[i] = (Math.random() * 100).toFixed(0) - 0;
             };
             historyChart.setOption(option, true);
         }, 2000)
